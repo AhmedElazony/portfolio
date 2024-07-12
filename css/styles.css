@@ -42,6 +42,7 @@ header {
   height: 150px;
   margin-bottom: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
 
 a {
