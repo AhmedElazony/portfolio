@@ -3,46 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahmed Elazony - Backend Engineer Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Ahmed Wael Elazony - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <div class="header-content">
-        <div class="text-content">
-          <h1>Ahmed Elazony</h1>
-          <p>Backend Engineer</p>
-        </div>
-        <div class="image-content">
-          <img src="images/my-image.jpg" alt="Ahmed Elazony" />
+      <div class="container">
+        <div class="header-content animated fadeIn">
+          <img
+            src="img/profile.jpg"
+            alt="Ahmed Wael Elazony"
+            class="profile-img"
+          />
+          <h1>Ahmed Wael Elazony</h1>
+          <p>Backend Engineer | PHP, Laravel, MySQL</p>
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
-    <section id="skills" class="animated-section">
-      <div class="container">
-        <h2>Skills</h2>
-        <ul>
-          <li>PHP</li>
-          <li>Laravel Framework</li>
-          <li>MVC Pattern</li>
-          <li>OOP</li>
-          <li>MySQL</li>
-          <li>Database Design</li>
-          <li>RESTful APIs</li>
-          <li>Git & GitHub</li>
-          <li>Linux & Bash</li>
-          <li>HTML5</li>
-          <li>JavaScript (Basics)</li>
-          <li>TailwindCSS (Amateur)</li>
-          <li>C# (Good Experience)</li>
-          <li>Algorithms & Data Structures</li>
-          <li>UML</li>
-        </ul>
-      </div>
-    </section>
-    <section id="experience" class="animated-section">
-      <div class="container">
-        <h2>Professional Experience</h2>
+    <main>
+      <section id="about" class="container animated fadeIn">
+        <h2>About</h2>
+        <p>
+          I am a backend engineer with expertise in PHP, Laravel, and MySQL. I
+          have a strong background in developing scalable web applications and a
+          passion for learning new technologies.
+        </p>
+      </section>
+      <section id="experience" class="container animated fadeIn">
+        <h2>Experience</h2>
         <div class="job">
           <h3>Backend Supervisor</h3>
           <p>MEGA Team MU | October 2023 - Present</p>
@@ -71,97 +73,121 @@
             <li>Worked on various projects, including MVC Framework.</li>
           </ul>
         </div>
-      </div>
-    </section>
-    <section id="education" class="animated-section">
-      <div class="container">
+      </section>
+      <section id="education" class="container animated fadeIn">
         <h2>Education</h2>
         <p>Mansura University | Computer Science | October 2021 - Present</p>
-      </div>
-    </section>
-    <section id="projects" class="animated-section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>
-            <a href="https://github.com/AhmedElazony/php-mvc-framework"
-              >An MVC Framework using PHP</a
-            >
-          </h3>
-          <p><strong>Stack:</strong> PHP, MVC Pattern, MySQL</p>
-          <p>
-            <strong>Description:</strong> A custom MVC framework built with PHP,
-            demonstrating the implementation of the MVC design pattern, routing,
-            and basic ORM functionalities.
-          </p>
-        </div>
-        <div class="project">
-          <h3>
-            <a href="https://github.com/AhmedElazony/tweety"
-              >Twitter Clone Web Application</a
-            >
-          </h3>
-          <p><strong>Stack:</strong> PHP, Laravel, MySQL, TailwindCSS</p>
-          <p>
-            <strong>Description:</strong> A Twitter-like social media
-            application that allows users to post tweets, follow other users,
-            and interact with posts. It utilizes Laravel for backend operations
-            and TailwindCSS for styling.
-          </p>
-        </div>
-        <div class="project">
-          <h3>
-            <a href="https://github.com/AhmedElazony/Blog"
-              >Blog Post Application</a
-            >
-          </h3>
-          <p><strong>Stack:</strong> PHP, Laravel, MySQL, JavaScript</p>
-          <p>
-            <strong>Description:</strong> A blogging platform where users can
-            create, edit, and delete blog posts. It supports user authentication
-            and CRUD operations for posts, categories, and comments.
-          </p>
-        </div>
-        <div class="project">
-          <h3>
-            <a href="https://github.com/AhmedElazony/tasks-platform"
-              >Tasks-Platform Web Application (in progress)</a
-            >
-          </h3>
-          <p><strong>Stack:</strong> PHP, Laravel, MySQL, Vue.js</p>
-          <p>
-            <strong>Description:</strong> A task management platform designed to
-            help teams collaborate and manage their tasks effectively. It
-            features real-time updates and a user-friendly interface.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="animated-section">
-      <div class="container">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+      </section>
+      <section id="skills" class="container animated fadeIn">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>PHP</li>
+          <li>Laravel Framework</li>
+          <li>MVC Pattern</li>
+          <li>OOP</li>
+          <li>MySQL</li>
+          <li>Database Design</li>
+          <li>RESTful APIs</li>
+          <li>Git & GitHub</li>
+          <li>Linux & Bash</li>
+          <li>HTML5</li>
+          <li>JavaScript (Basics)</li>
+          <li>TailwindCSS (Amateur)</li>
+          <li>C# (Good Experience)</li>
+          <li>Algorithms & Data Structures</li>
+          <li>UML</li>
+        </ul>
+      </section>
+      <section id="projects" class="animated-section animated fadeIn">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project">
+            <h3>
+              <a href="https://github.com/AhmedElazony/php-mvc-framework"
+                >An MVC Framework using PHP</a
+              >
+            </h3>
+            <p><strong>Stack:</strong> PHP, MVC Pattern, MySQL</p>
+            <p>
+              <strong>Description:</strong> A custom MVC framework built with
+              PHP, demonstrating the implementation of the MVC design pattern,
+              routing, and basic ORM functionalities.
+            </p>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+          <div class="project">
+            <h3>
+              <a href="https://github.com/AhmedElazony/tweety"
+                >Twitter Clone Web Application</a
+              >
+            </h3>
+            <p><strong>Stack:</strong> PHP, Laravel, MySQL, TailwindCSS</p>
+            <p>
+              <strong>Description:</strong> A Twitter-like social media
+              application that allows users to post tweets, follow other users,
+              and interact with posts. It utilizes Laravel for backend
+              operations and TailwindCSS for styling.
+            </p>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+          <div class="project">
+            <h3>
+              <a href="https://github.com/AhmedElazony/Blog"
+                >Blog Post Application</a
+              >
+            </h3>
+            <p><strong>Stack:</strong> PHP, Laravel, MySQL, JavaScript</p>
+            <p>
+              <strong>Description:</strong> A blogging platform where users can
+              create, edit, and delete blog posts. It supports user
+              authentication and CRUD operations for posts, categories, and
+              comments.
+            </p>
           </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
+          <div class="project">
+            <h3>
+              <a href="https://github.com/AhmedElazony/tasks-platform"
+                >Tasks-Platform Web Application (in progress)</a
+              >
+            </h3>
+            <p><strong>Stack:</strong> PHP, Laravel, MySQL, Vue.js</p>
+            <p>
+              <strong>Description:</strong> A task management platform designed
+              to help teams collaborate and manage their tasks effectively. It
+              features real-time updates and a user-friendly interface.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="animated-section animated fadeIn">
+        <div class="container">
+          <h2>Contact</h2>
+          <form action="https://formspree.io/f/mgvwvazg" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer>
       <div class="container">
         <p>&copy; 2024 Ahmed Elazony</p>
       </div>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
