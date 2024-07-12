@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 2em;
+  text-align: left;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-content {
+  flex: 1;
+  margin-right: 2em;
+}
+
+.text-content h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #00bcd4;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  margin: 0.5em 0 0 0;
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.image-content {
+  flex: 1;
+  text-align: right;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.image-content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #00bcd4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 2em 0;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section h2 {
+  margin-bottom: 1em;
+  color: #00bcd4;
+}
+
+section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section ul li {
+  background: #2a2a2a;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-left: 5px solid #00bcd4;
+}
+
+.project {
+  background: #2a2a2a;
+  margin-bottom: 2em;
+  padding: 1.5em;
+  border-left: 5px solid #00bcd4;
+  border-radius: 5px;
+}
+
+.project h3 a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.project h3 a:hover {
+  color: #e0e0e0;
+}
+
+footer {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e0e0e0;
+}
+
+form {
+  background: #2a2a2a;
+  padding: 2em;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  border-radius: 4px;
+  background: #333333;
+  color: #ffffff;
+}
+
+button {
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 4px;
+  background: #00bcd4;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #008c9e;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
